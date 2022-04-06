@@ -4,7 +4,7 @@ target/
 
 # Jenv
 .java-version
-
+bin
 # Eclipse
 .settings/
 .classpath
