@@ -3,8 +3,9 @@ public class Library {
 	public static void main(String[] args) {
 		Book b1 = new Book("learn java");
 		b1.setPrice(100.3F);
-		b1.setStatus(STATUS.AVAILABLE);
+		b1.setStatus(STATUS.ISSUED);
 		System.out.println(b1.getTitle());
 		System.out.println(b1.getPrice());
+		b1.issue();
 	}
 }

@@ -4,6 +4,13 @@ public class Book {
 	private float price; // 4 bytes
 	private STATUS status; // ISSUED, AVAILABLE, DAMAGED
 
+	public void issue() {
+		if (status != STATUS.AVAILABLE) {
+			throw new BookNotAvailableException("book is not available");
+		}
+		this.status = STATUS.ISSUED;
+	}
+
 	public Book(String title) {
 		this.title = title;
 	}
