@@ -1,0 +1,4 @@
+
+public enum STATUS {
+	ISSUED, AVAILABLE, DAMAGED
+}
