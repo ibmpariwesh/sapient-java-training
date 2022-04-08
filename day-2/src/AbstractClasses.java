@@ -30,12 +30,16 @@ class Manager extends Person {// concrete class
 public class AbstractClasses {
 	public static void main(String[] args) {
 //		Person p1 = new Person();
+		create();
+		
+	}
+
+	private static void create() {
 		Person engineer = new Employee();
 		engineer.eat();
 		engineer.work();
 		Person manager = new Manager();
 		manager.eat();
-		manager.work();
-		
+		manager.work();		
 	}
 }
