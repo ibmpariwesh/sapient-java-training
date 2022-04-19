@@ -29,7 +29,6 @@ public class MathsTest {
 		boolean result = maths.compare(1, 1);
 		assertTrue(result);
 	}
-	
 	@Test
 	public void testCompareWithNotEqualNUmbers() {
 		boolean result = maths.compare(1, -1);
@@ -40,14 +39,6 @@ public class MathsTest {
 	public void testCompareWithException() {
 		maths.compare(-1, -1);
 	}
-	
-	@Test
-	public void compareArrays() {
-		int[] n1 = new int[] {1,2,3,4};
-		int[] n2 = new int[] {1,2,3,4};
-		assertArrayEquals(n1, n2);
-	}
-	
 	@Test
 	public void testAdd() {
 		System.out.println("testAdd");
